@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>GPA Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h3 class="text-center">GPA Calculator</h3>
+            <p class="text-center">Enter the number of classes matching the corresponding letter.</p>
+            <p class="text-center text-warning">Column 1 is for non-AP classes. Column 2 is for AP classes.</p>
+            <form class="form-horizontal">
+                <fieldset>
+                    <div class="form-group">
+                        <label for="inputA" class="col-md-2 control-label">A</label>
+                        <div class="col-md-1">
+                            <input class="form-control" id="inputA" value="0" placeholder="0" type="number" max="8" min="0">   
+                        </div>
+                        <div class="col-md-1">
+                            <input class="form-control" id="inputAPA" value="0" placeholder="0" type="number" max="8" min="0">                            
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputB" class="col-md-2 control-label">B</label>
+                        <div class="col-md-1">
+                            <input class="form-control" id="inputB" value="0" placeholder="0" type="number" max="8" min="0">
+                        </div>
+                        <div class="col-md-1">
+                            <input class="form-control" id="inputAPB" value="0" placeholder="0" type="number" max="8" min="0">                            
+                        </div>                        
+                    </div>
+                    <div class="form-group">
+                        <label for="inputC" class="col-md-2 control-label">C</label>
+                        <div class="col-md-1">
+                            <input class="form-control" id="inputC" value="0" placeholder="0" type="number" max="8" min="0">
+                        </div>
+                        <div class="col-md-1">
+                            <input class="form-control" id="inputAPC" value="0" placeholder="0" type="number" max="8" min="0">                            
+                        </div>                        
+                        <p id="classValue"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputD" class="col-md-2 control-label">D</label>
+                        <div class="col-md-1">
+                            <input class="form-control" id="inputD" value="0" placeholder="0" type="number" max="8" min="0">
+                        </div>
+                        <div class="col-md-1">
+                            <input class="form-control" id="inputAPD" value="0" placeholder="0" type="number" max="8" min="0">                            
+                        </div>                        
+                        <p id="gpaValue"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputF" class="col-md-2 control-label">F</label>
+                        <div class="col-md-1">
+                            <input class="form-control" id="inputF" value="0" placeholder="0" type="number" max="8" min="0">
+                        </div>
+                        <div class="col-md-1">
+                            <input class="form-control" id="inputAPF" value="0" placeholder="0" type="number" max="8" min="0">                            
+                        </div>                        
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-10 col-lg-offset-2">
+                            <button type="submit" onclick="calculator();return false;" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <script src="assets/js/calc.js"></script>
+    </body>
+</html>
