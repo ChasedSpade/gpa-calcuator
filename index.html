@@ -2,10 +2,11 @@
     <head>
         <title>GPA Calculator</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>                
+        </script>
         <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
     </head>
     <body>
-        <script src="assets/js/render.js"></script>
         <div id="calculator" class="container">
             <h3 class="text-center">GPA Calculator</h3>
             <p class="text-center">Enter the number of classes matching the corresponding letter.</p>
@@ -71,5 +72,10 @@
             </form>
         </div>
         <script src="assets/js/calc.js"></script>
+        <script>
+            if ($ ( window ).width() < 1200) {
+                $("div").replaceWith("<h3 class='text-center'>:(</h3><br><p class='text-center text-warning'>This page does not render properly on small devices.</p>");
+            }
+        </script>        
     </body>
 </html>
